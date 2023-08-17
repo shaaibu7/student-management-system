@@ -27,10 +27,16 @@ class StudentsController < ApplicationController
     def update
         @student = Student.find(params[:id])
         if @student.update(student_params)
-            redirect_to students_path
+            redirect_to student_path(@student)
         else
             render :edit
         end
+    end
+
+    def destroy
+        @student = Student.find(params[:id])
+        @student.destroy
+        redirect_to students_path
     end
 
     private
