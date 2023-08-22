@@ -84,7 +84,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:rica213/recipe-app.git
+  git clone https://github.com/shaaibu7/student-management-system.git
 ```
 
 To install dependencies, run:
@@ -126,11 +126,6 @@ To run tests, run the following command:
 
 # 👥 Authors <a name="authors"></a>
 
-👩🏽‍🍳 **Clarielle Larissa**
-
-- GitHub: [@rica213](https://github.com/rica213)
-- Twitter: [@alc3and](https://twitter.com/alc3and)
-- LinkedIn: [Clarielle Larissa](https://linkedin.com/in/larissa-clarielle)
 
 🧑🏽‍🍳 **Shaaibu Suleiman**
 
@@ -146,11 +141,7 @@ To run tests, run the following command:
 # 🔭 Future Features <a name="future-features"></a>
 
   - Add styling to all the pages
-  - Implement edit ingredient
-  - Implement delete ingredient
-  - Implement edit recipe
-  - Implement edit food
-  - Deploy project
+  - Implement functionality that compiles student performance
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -179,20 +170,7 @@ Remember, your support matters! Whether it's spreading the word, providing feedb
 Thank you for your support and for being a part of this journey! ❤️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-# 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank: 
-- Microverse
-- Code Reviewers
-- Peers who debated with us about the project requirements 🤩 
-  - [Racheal](https://github.com/coderacheal) 👧🏾
-  - [Frempong](https://github.com/frempongdev) 😎
-  - [Joseph](https://github.com/Zeph180) 🤭
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+ 
 
 <!-- LICENSE -->
 
