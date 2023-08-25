@@ -10,11 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_18_232904) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_24_180808) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "courses", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "demos", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.datetime "created_at", null: false
@@ -27,6 +34,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_18_232904) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "date_of_birth"
+    t.string "permanent_contact_number"
+    t.string "local_address"
+    t.string "permanent_address"
+    t.string "alternate_contact_number"
   end
 
 end
