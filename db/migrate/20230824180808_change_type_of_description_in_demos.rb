@@ -9,6 +9,6 @@ class ChangeTypeOfDescriptionInDemos < ActiveRecord::Migration[7.0]
         change_column :demos, :description, :string
       end
     end
-  end
+    end
 end
  
