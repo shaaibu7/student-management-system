@@ -18,3 +18,8 @@ Student.create(first_name: 'Ravi', last_name: 'Zacharias', email: 'ravi@gmail.co
     email: "student#{i + 1}@bootcamp.com"
   )
 end
+
+Student.all.each do |student|
+  student.blogs.create(title: "Dummy Blog for Student #{student.id}", content: "Custom content pending")
+  student.blogs.create(title: "Dummy Blog for Student #{student.id}", content: "Custom content pending")
+end
