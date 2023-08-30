@@ -1,3 +1,3 @@
 class Demo < ApplicationRecord
-    has_one :sub_demo
+  has_one :sub_demo
 end
