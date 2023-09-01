@@ -3,8 +3,9 @@
 <h1>Student details</h1>
 <%= link_to 'Edit Student', edit_student_path(@student) %>
 
-<p><strong>First Name: </strong><%= @student.first_name %></p>
-<p><strong>Last Name: </strong><%= @student.last_name %></p>
+<p><strong>Name: </strong><%= @student.full_name %></p>
 <p><strong>Email: </strong><%= @student.email %></p>
+
+<p><strong>Age </strong><%= @student.age %></p>
 
 <%= link_to 'Back', students_path %>
