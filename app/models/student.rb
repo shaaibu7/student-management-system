@@ -13,37 +13,34 @@ class Student < ApplicationRecord
   after_create :display_student_age
 
   def display_student_age
-    if self.date_of_birth.present?
-      age = Date.today.year - self.date_of_birth.year
+    if date_of_birth.present?
+      age = Date.today.year - date_of_birth.year
       puts "========== Age of the student is #{age}=========="
     else
-      puts "========== Age can not be calculated without date_of_birth"
+      puts '========== Age can not be calculated without date_of_birth'
     end
   end
 
   def validate_student_age
-    if self.date_of_birth.present?
-      age = Date.today.year - self.date_of_birth.year
-      if age < 15
-        errors.add(:age, 'Please provide a valid date of birth here. Age must be greater than 15')
-      end
-    end
-  end 
+    return unless date_of_birth.present?
+
+    age = Date.today.year - date_of_birth.year
+    return unless age < 15
+
+    errors.add(:age, 'Please provide a valid date of birth here. Age must be greater than 15')
+  end
 
   def full_name
     "#{first_name} #{last_name}"
   end
 
   def age
-    if date_of_birth.present?
-      Date.today.year - date_of_birth.year
-    else
-      nil
-    end
+    return unless date_of_birth.present?
+
+    Date.today.year - date_of_birth.year
   end
 
   def name_with_email
     "#{full_name} | #{email}"
   end
-  
 end
