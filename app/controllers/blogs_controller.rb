@@ -1,8 +1,8 @@
-class StudentsController < ApplicationController
+class BlogsController < ApplicationController
   before_action :set_blog, only: %i[show edit update destroy]
 
   def index
-    @blog = Blog.find_each
+    @blogs = Blog.includes(:student)
   end
 
   def new
